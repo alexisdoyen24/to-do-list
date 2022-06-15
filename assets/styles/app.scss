@@ -1,0 +1,31 @@
+*{
+    text-decoration: none;
+}
+body {
+    background-color: lightgray;
+
+    article{
+        text-align: center;
+        margin: 1rem auto;
+        border: 1px solid black;
+        background-color: black;
+        width: 5rem;
+        border-radius: 20px;
+        color: white;
+
+        a{
+            color: white;
+        }
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .form{
+        border: 3px solid black;
+        width: 15rem;
+        margin: auto;
+        padding: 1rem
+    }
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <h1>To-do list</h1>
+
+    <div class="form">
+    {{ form(form) }}
+    </div>
+
+    {% for list in lists %}
+
+        <article>
+        {# path va me permettre de faire le lien avec ma public function #}
+            <a href="{{ path('app_home_list', { id : list.id }) }}">
+                {{ list.name }}
+            </a>
+        </article>
+        
+
+    {% endfor %}
+{% endblock %}

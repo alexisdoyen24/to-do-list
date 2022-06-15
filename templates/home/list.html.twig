@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}list{% endblock %}
+
+{% block body %}
+
+    <h1>Liste de tâches</h1>
+
+    <div class="form">
+    {{ form(taskForm) }}
+    </div>
+
+    {% for task in taskLists %}
+
+        <article>
+            {{ task.title }}
+            {{ task.id }}
+
+            {# <a href="{{ path('app_home_delete', { id : task.id }) }}">
+            <button>{{ task.title }}</button>
+            </a> #}
+        </article>
+        
+
+    {% endfor %}
+        
+{% endblock %}
